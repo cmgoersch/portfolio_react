@@ -1,0 +1,125 @@
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #3d444e, #0d1117);
+  color: #c9d1d9;
+  font-family: Arial, sans-serif;
+}
+
+/* Profil Header */
+.profile-container header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #c9d1d9;
+  margin-bottom: 10px;
+}
+
+.profile-container header h1 {
+  margin: 10px 0 5px;
+  font-size: 3rem;
+  color: #c9d1d9;
+  background: linear-gradient(to right, #5a4599, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.username {
+  color: #8b949e;
+}
+
+/* Hauptinhalt */
+.profile-container main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page section {
+  margin-bottom: 30px;
+  border: 1px solid #30363d;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #161b22;
+}
+
+.about-page h2 {
+  color: #c9d1d9;
+  margin-top: 0;
+}
+
+.about-page h3 {
+  color: #c9d1d9;
+  margin-top: 10px;
+}
+
+.about-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-page ul li {
+  margin-bottom: 10px;
+}
+
+.about-page p a {
+  color: #5c489b;
+  text-decoration: none;
+}
+
+.about-page p a:hover {
+  font-weight: 700;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-button {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-contact {
+  background-color: transparent;
+  color: #c9d1d9;
+  border: 2px solid #5c489b;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: #5c489b;
+  color: #ffffff;
+  box-shadow: 0 0 8px #5c489b88;
+}

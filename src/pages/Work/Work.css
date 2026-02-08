@@ -1,0 +1,151 @@
+.work-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #3d444e, #0d1117);
+  color: #c9d1d9;
+  font-family: Arial, sans-serif;
+}
+
+.work-page main {
+  flex: 1;
+  overflow: hidden;
+}
+
+.work-page a {
+  text-decoration: none;
+}
+
+.work-page a:hover {
+  color: #5c489b;
+}
+
+.introduction {
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  color: #9ba5b1;
+  line-height: 1.6;
+}
+
+.introduction strong {
+  color: #c9d1d9;
+}
+
+/* Vertikales Layout für Iframes und Buttons */
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.content-item {
+  background: #161b22;
+  border: 2px solid #5c489b;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding-bottom: 15px;
+  height: auto;
+}
+
+.content-item iframe {
+  width: 125%;
+  height: 700px;
+  transform: scale(0.8);
+  transform-origin: top;
+  border: none;
+  display: block;
+}
+
+.content-item button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #5c489b;
+  color: #c9d1d9;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content-item button:hover {
+  background-color: #3d2d6a;
+}
+
+.content-item .project-info {
+  margin-top: -120px;
+  padding: 20px;
+  text-align: center;
+}
+
+.content-item h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #c9d1d9;
+}
+
+.content-item p {
+  font-size: 14px;
+  color: #9ba5b1;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+}
+
+.techstack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.techstack span {
+  background-color: #30363d;
+  border: 1px solid #5c489b;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: #c9d1d9;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.github-icon {
+  width: 28px;
+  height: 28px;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.github-icon:hover {
+  opacity: 1;
+}
+
+/* Scrollbar-Styling */
+.vertical-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.vertical-container::-webkit-scrollbar-thumb {
+  background: #5c489b;
+  border-radius: 4px;
+}
+
+.vertical-container::-webkit-scrollbar-track {
+  background: #161b22;
+}
