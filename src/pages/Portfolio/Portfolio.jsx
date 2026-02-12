@@ -6,6 +6,22 @@ import './Portfolio.css';
 
 const projects = [
   {
+    title: "Kabul Calls – Action Platform for Political Participation",
+    url: "https://kabul-calls.de/",
+    description: `Kabul Calls is a campaign website that enables people in Germany to directly call members of parliament and confront them with the voices of Afghans at risk.
+
+The site explains the political background of Germany's responsibility in Afghanistan, guides users through a clear step-by-step calling flow, and lets them play pre-recorded stories of affected people during the call. By combining storytelling, concrete demands and an easy-to-use calling tool, the project helps translate solidarity into real political pressure.`,
+    techstack: [
+      "Astro (Static Site Framework)",
+      "Preact / React Components",
+      "TypeScript / TSX Scripts",
+      "JsSIP (Browser SIP / Telephony)",
+      "libphonenumber-js (Phone Number Handling)",
+      "Responsive, Campaign-Focused UX Design"
+    ],
+    github: null
+  },
+  {
     title: "HelloDev.social – Capstone Project at DCI",
     url: "https://hellodev.social/",
     description: `HelloDev.social is the capstone project of our one-year Web Development course at Digital Career Institute (DCI) (September 2024 – September 2025). It's a full-stack application — we designed and built both the front end and back end ourselves.

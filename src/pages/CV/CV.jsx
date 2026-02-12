@@ -5,6 +5,12 @@ import './CV.css';
 
 const professionalExperience = [
   {
+    date: "12.2025 – 03.2026",
+    title: "exxeta",
+    role: "Frontend developer & UI/UX Designer",
+    description: "During my full-time internship at Exxeta, I contribute to a customer project as a Front-End Developer within a large enterprise environment. I design and implement modern, scalable user interfaces using React, translating UI concepts from Figma into production-ready code. In close collaboration with backend developers, designers, and project stakeholders, I work within established workflows and tools such as Jira to deliver high-quality features in an agile setting."
+  },
+  {
     date: "11.2019 – 01.2024",
     title: "Madways UG",
     role: "Graphic Designer",
