@@ -5,7 +5,27 @@ import { useConsent } from '../../context/ConsentContext';
 import './Portfolio.css';
 
 const projects = [
-  {
+{
+    title: "Cadus.org – Multilingual NGO Website with WordPress",
+    url: "https://www.cadus.org/",
+    description: `I developed the official website for the humanitarian NGO CADUS using WordPress and the Avada theme. The goal was to create a user-friendly, accessible, and multilingual platform to present the organization's international crisis response work.
+    
+    The site includes interactive maps, donation integration, a modular page builder, and multilingual support via WPML. I focused on performance, responsive design, and ease of use for internal content editors.`,
+    techstack: [
+      "WordPress (CMS)",
+      "Avada Theme & Fusion Builder",
+      "JavaScript",
+      "WPML – Multilingual Plugin",
+      "MapGeo (Interactive Mapping Plugin)",
+      "Custom Post Types",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SEO Optimization"
+    ],
+    github: null
+  },
+   {
     title: "Kabul Calls – Action Platform for Political Participation",
     url: "https://kabul-calls.de/",
     description: `Kabul Calls is a campaign website that enables people in Germany to directly call members of parliament and confront them with the voices of Afghans at risk.
@@ -41,26 +61,6 @@ HelloDev.social is a practice environment that demonstrates our ability to build
       "Responsive & Accessibility-Focused Design"
     ],
     github: "https://github.com/Merge-Pray/HelloDev"
-  },
-  {
-    title: "Cadus.org – Multilingual NGO Website with WordPress",
-    url: "https://www.cadus.org/",
-    description: `I developed the official website for the humanitarian NGO CADUS using WordPress and the Avada theme. The goal was to create a user-friendly, accessible, and multilingual platform to present the organization's international crisis response work.
-
-The site includes interactive maps, donation integration, a modular page builder, and multilingual support via WPML. I focused on performance, responsive design, and ease of use for internal content editors.`,
-    techstack: [
-      "WordPress (CMS)",
-      "Avada Theme & Fusion Builder",
-      "JavaScript",
-      "WPML – Multilingual Plugin",
-      "MapGeo (Interactive Mapping Plugin)",
-      "Custom Post Types",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "SEO Optimization"
-    ],
-    github: null
   },
   {
     title: "Pollio – Digital Voting & Participation",
@@ -158,13 +158,19 @@ const Portfolio = () => {
         <section className="vertical-container">
           {projects.map((project, index) => (
             <div className="content-item" key={index}>
-              {hasConsented ? (
+              {hasConsented && project.embed !== false ? (
                 <iframe 
                   src={project.url} 
                   title={project.title}
                   loading="lazy"
                   tabIndex="-1"
                 ></iframe>
+              ) : project.embed === false ? (
+                <div className="iframe-placeholder">
+                  <p>
+                    Live preview is disabled for this project. Use the button below to open the website.
+                  </p>
+                </div>
               ) : (
                 <div className="iframe-consent-placeholder">
                   <p>
