@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   gap: 2rem;
   position: relative;
   z-index: 1;
@@ -25,7 +25,7 @@
 /* ----- Einleitungstext in eigener Box ----- */
 .contact-intro {
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   background-color: #161b22;
   border: 1px solid #30363d;
   padding: 2rem;
@@ -80,7 +80,7 @@
 /* ----- Kontaktformular in eigener Box ----- */
 #contact {
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   position: relative;
   z-index: 2;
 }

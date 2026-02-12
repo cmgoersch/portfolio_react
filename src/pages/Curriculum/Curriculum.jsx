@@ -157,7 +157,6 @@ const Curriculum = () => {
           </div>
 
           <div className="skill-button-wrapper">
-            <Link to="/adventure" className="skill-mix-button">Skill-Mix</Link>
             <Link to="/work" className="skill-mix-button">My Work</Link>
             <Link to="/contact" className="skill-mix-button">Contact Me</Link>
           </div>

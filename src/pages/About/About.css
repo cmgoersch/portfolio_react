@@ -7,10 +7,14 @@
   font-family: Arial, sans-serif;
 }
 
+.profile-container {
+  padding-top: 30px;
+}
+
 /* Profil Header */
 .profile-container header {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0;
 }
 
 .profile-pic {

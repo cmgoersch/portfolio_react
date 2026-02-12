@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import './Work.css';
@@ -113,6 +114,16 @@ The site uses AI-generated visuals and a lightweight WordPress setup to reflect 
 ];
 
 const Work = () => {
+  const [iframesReady, setIframesReady] = useState(false);
+
+  useEffect(() => {
+    // Warte bis die Seite gerendert und gescrollt ist, dann lade die iframes
+    const timer = setTimeout(() => {
+      setIframesReady(true);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleVisitPage = (url) => {
     window.open(url, '_blank');
   };
@@ -131,7 +142,16 @@ const Work = () => {
         <section className="vertical-container">
           {projects.map((project, index) => (
             <div className="content-item" key={index}>
-              <iframe src={project.url} title={project.title}></iframe>
+              {iframesReady ? (
+                <iframe 
+                  src={project.url} 
+                  title={project.title}
+                  loading="lazy"
+                  tabIndex="-1"
+                ></iframe>
+              ) : (
+                <div className="iframe-placeholder">Loading...</div>
+              )}
               
               <div className="project-info">
                 <h3>{project.title}</h3>
