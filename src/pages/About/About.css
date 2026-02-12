@@ -67,6 +67,10 @@
   margin-top: 10px;
 }
 
+.about-page p {
+  line-height: 1.6;
+}
+
 .profile-container main ul {
   list-style-type: none;
   padding: 0;

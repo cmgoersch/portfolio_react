@@ -1,3 +1,16 @@
+.datenschutz-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #3d444e, #0d1117);
+  color: #c9d1d9;
+  font-family: Arial, sans-serif;
+}
+
+.datenschutz-page main {
+  flex: 1;
+}
+
 .datenschutz-page main a {
   color: #58a6ff;
   text-decoration: none;

@@ -156,6 +156,48 @@ const CV = () => {
             ))}
           </div>
 
+          {/* Commitment */}
+          <div className="section">
+            <h2>Commitment (selection)</h2>
+
+            <div className="entry">
+              <span className="details"><strong>Gängeviertel e.V., Hamburg</strong></span>
+              <p>
+                Since 2021, I have been an active member of Gängeviertel e.V., a non-profit cultural initiative
+                that promotes cultural participation, grassroots democratic decision-making processes, and the
+                strengthening of urban counterculture.
+              </p>
+            </div>
+
+            <div className="entry">
+              <span className="details"><strong>Alte Hölle e.V., Wiesenburg (Brandenburg)</strong></span>
+              <p>
+                As co-founder of Alte Hölle e.V., I have been running a seminar hotel in Brandenburg on a voluntary
+                basis since 2021, together with a large circle of friends. The hotel promotes culture in rural areas
+                and offers seminar rooms and a festival site to creative groups and NGOs.
+              </p>
+            </div>
+
+            <div className="entry">
+              <span className="details"><strong>Chaos Computer Club e.V.</strong></span>
+              <p>
+                Since 2014, I have been involved in the Chaos Computer Club e.V., primarily in the design,
+                organization, and development of the annual Chaos Communication Congress. In addition, I support
+                various events as well as the local Chaos Club Entropia e.V. in Karlsruhe, for which I developed the
+                corporate design.
+              </p>
+            </div>
+
+            <div className="entry">
+              <span className="details"><strong>Cosmic Cable Ltd.</strong></span>
+              <p>
+                Since 2016, I have been an active member and designer of the artist crew Cosmic Cable Ltd.  an art
+                project for retro telephony at festivals. My tasks include the organization of the group and the
+                visual design of the installations and communication media.
+              </p>
+            </div>
+          </div>
+
           <div className="skill-button-wrapper">
             <Link to="/portfolio" className="skill-mix-button">Portfolio</Link>
             <Link to="/contact" className="skill-mix-button">Contact</Link>
