@@ -18,7 +18,7 @@ const NotFound = () => {
           </p>
           <div className="notfound-actions">
             <Link to="/" className="notfound-button primary">Back to the bubbles</Link>
-            <Link to="/work" className="notfound-button">View portfolio</Link>
+            <Link to="/portfolio" className="notfound-button">View portfolio</Link>
           </div>
         </section>
       </main>

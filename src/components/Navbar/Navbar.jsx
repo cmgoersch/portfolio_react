@@ -15,8 +15,8 @@ const Navbar = () => {
         <ul id="menu-items">
           <li><Link to="/">Back to the bubbles</Link></li>
           <li><Link to="/about">About me</Link></li>
-          <li><Link to="/work">Portfolio</Link></li>
-          <li><Link to="/curriculum">CV</Link></li>
+          <li><Link to="/portfolio">Portfolio</Link></li>
+          <li><Link to="/cv">CV</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
         <div 
@@ -27,8 +27,8 @@ const Navbar = () => {
           <ul>
             <li><Link to="/" onClick={closeMenu}>Back to the bubbles</Link></li>
             <li><Link to="/about" onClick={closeMenu}>About me</Link></li>
-            <li><Link to="/work" onClick={closeMenu}>Portfolio</Link></li>
-            <li><Link to="/curriculum" onClick={closeMenu}>CV</Link></li>
+            <li><Link to="/portfolio" onClick={closeMenu}>Portfolio</Link></li>
+            <li><Link to="/cv" onClick={closeMenu}>CV</Link></li>
             <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
           </ul>
         </div>

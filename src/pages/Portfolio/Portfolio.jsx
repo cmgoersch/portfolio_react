@@ -1,7 +1,8 @@
+import { useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import { useConsent } from '../../context/ConsentContext';
-import './Work.css';
+import './Portfolio.css';
 
 const projects = [
   {
@@ -113,8 +114,15 @@ The site uses AI-generated visuals and a lightweight WordPress setup to reflect 
   }
 ];
 
-const Work = () => {
+const Portfolio = () => {
   const { hasConsented, accept } = useConsent();
+
+  // Ensure page always starts at top when mounted
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, []);
 
   const handleVisitPage = (url) => {
     window.open(url, '_blank');
@@ -189,4 +197,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Portfolio;

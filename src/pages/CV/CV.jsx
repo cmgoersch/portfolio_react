@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import './Curriculum.css';
+import './CV.css';
 
 const professionalExperience = [
   {
@@ -92,7 +92,7 @@ const skills = {
   }
 };
 
-const Curriculum = () => {
+const CV = () => {
   return (
     <div className="curriculum-page">
       <Navbar />
@@ -157,8 +157,8 @@ const Curriculum = () => {
           </div>
 
           <div className="skill-button-wrapper">
-            <Link to="/work" className="skill-mix-button">My Work</Link>
-            <Link to="/contact" className="skill-mix-button">Contact Me</Link>
+            <Link to="/portfolio" className="skill-mix-button">Portfolio</Link>
+            <Link to="/contact" className="skill-mix-button">Contact</Link>
           </div>
         </section>
       </main>
@@ -168,4 +168,4 @@ const Curriculum = () => {
   );
 };
 
-export default Curriculum;
+export default CV;

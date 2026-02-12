@@ -4,8 +4,8 @@ import { ConsentProvider } from './context/ConsentContext';
 import CookieBanner from './components/CookieBanner/CookieBanner';
 import Landing from './pages/Landing/Landing';
 import About from './pages/About/About';
-import Work from './pages/Work/Work';
-import Curriculum from './pages/Curriculum/Curriculum';
+import Portfolio from './pages/Portfolio/Portfolio';
+import CV from './pages/CV/CV';
 import Contact from './pages/Contact/Contact';
 import NotFound from './pages/NotFound/NotFound';
 import Impressum from './pages/Impressum/Impressum';
@@ -22,8 +22,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/about" element={<About />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/curriculum" element={<Curriculum />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/cv" element={<CV />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />

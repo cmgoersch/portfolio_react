@@ -75,15 +75,15 @@ const About = () => {
               I'm really looking forward to gaining practical experience in a real-world team.
             </p>
             <p>
-              If you're interested in my work, feel free to check out the <Link to="/work"><strong>My Work</strong></Link> section.  
-              And if you have a job or project in mind, take a look at my <Link to="/curriculum"><strong>Curriculum Vitae</strong></Link> 😊
+              If you're interested in my work, feel free to check out the <Link to="/portfolio"><strong>My Work</strong></Link> section.  
+              And if you have a job or project in mind, take a look at my <Link to="/cv"><strong>Curriculum Vitae</strong></Link> 😊
             </p>
             <p><strong>I'm ready :)</strong></p>
           </section>
 
           <div className="contact-button">
-            <Link to="/work" className="btn-contact">Portfolio</Link>
-            <Link to="/curriculum" className="btn-contact">CV</Link>
+            <Link to="/portfolio" className="btn-contact">Portfolio</Link>
+            <Link to="/cv" className="btn-contact">CV</Link>
             <Link to="/contact" className="btn-contact">Contact</Link>
           </div>
         </main>
