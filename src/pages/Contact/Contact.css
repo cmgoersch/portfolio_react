@@ -1,10 +1,14 @@
+/* ----- Grundlayout: Footer fixiert am unteren Rand ----- */
 .contact-page {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #3d444e, #0d1117);
-  color: #c9d1d9;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+  color: #c9d1d9;
+  background: linear-gradient(to bottom, #3d444e, #0d1117);
+  overflow-x: hidden;
 }
 
 .contact-page main {
@@ -14,9 +18,11 @@
   align-items: center;
   padding: 2rem;
   gap: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-/* Einleitungstext */
+/* ----- Einleitungstext in eigener Box ----- */
 .contact-intro {
   width: 100%;
   max-width: 700px;
@@ -26,6 +32,8 @@
   border-radius: 8px;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
 
 .contact-intro h2 {
@@ -69,10 +77,12 @@
   filter: brightness(1);
 }
 
-/* Kontaktformular */
+/* ----- Kontaktformular in eigener Box ----- */
 #contact {
   width: 100%;
   max-width: 700px;
+  position: relative;
+  z-index: 2;
 }
 
 .contact-box {
@@ -118,15 +128,20 @@
   font-family: Arial, sans-serif;
   font-size: 14px;
   resize: vertical;
+  position: relative;
+  z-index: auto;
 }
 
+/* Spezielle Regeln für das Message Textarea */
 .contact-box form textarea {
   min-height: 120px;
   resize: vertical;
   line-height: 1.4;
-  vertical-align: top;
+  position: relative;
+  z-index: 1;
 }
 
+/* Placeholder Styling */
 .contact-box form input::placeholder,
 .contact-box form textarea::placeholder {
   color: #6c757d;
