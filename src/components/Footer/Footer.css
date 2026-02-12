@@ -18,3 +18,17 @@
 .site-footer a:hover {
   color: #5c489b;
 }
+
+.privacy-settings-button {
+  background: none;
+  border: none;
+  color: #c9d1d9;
+  margin-left: 8px;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+}
+
+.privacy-settings-button:hover {
+  color: #5c489b;
+}

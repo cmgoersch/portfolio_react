@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import { useConsent } from '../../context/ConsentContext';
 import './Work.css';
 
 const projects = [
@@ -114,15 +114,7 @@ The site uses AI-generated visuals and a lightweight WordPress setup to reflect 
 ];
 
 const Work = () => {
-  const [iframesReady, setIframesReady] = useState(false);
-
-  useEffect(() => {
-    // Warte bis die Seite gerendert und gescrollt ist, dann lade die iframes
-    const timer = setTimeout(() => {
-      setIframesReady(true);
-    }, 300);
-    return () => clearTimeout(timer);
-  }, []);
+  const { hasConsented, accept } = useConsent();
 
   const handleVisitPage = (url) => {
     window.open(url, '_blank');
@@ -142,7 +134,7 @@ const Work = () => {
         <section className="vertical-container">
           {projects.map((project, index) => (
             <div className="content-item" key={index}>
-              {iframesReady ? (
+              {hasConsented ? (
                 <iframe 
                   src={project.url} 
                   title={project.title}
@@ -150,7 +142,15 @@ const Work = () => {
                   tabIndex="-1"
                 ></iframe>
               ) : (
-                <div className="iframe-placeholder">Loading...</div>
+                <div className="iframe-consent-placeholder">
+                  <p>
+                    External project content is blocked to protect your privacy.
+                    Click the button below to load all embedded websites.
+                  </p>
+                  <button onClick={accept}>
+                    Allow external content
+                  </button>
+                </div>
               )}
               
               <div className="project-info">
