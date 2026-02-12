@@ -1,31 +1,31 @@
 .site-footer {
-  background-color: #161b22;
-  color: #c9d1d9;
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   padding: 18px 10px;
   font-size: 14px;
-  border-top: 1px solid #30363d;
+  border-top: 1px solid var(--color-border-subtle);
   margin-top: 40px;
 }
 
 .site-footer a {
-  color: #c9d1d9;
+  color: var(--color-text-primary);
   margin: 0 8px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .site-footer a:hover {
-  color: #5c489b;
+  color: var(--color-text-link);
 }
 
 .privacy-settings-button {
   background: none;
   border: none;
-  color: #c9d1d9;
+  color: var(--color-text-primary);
   margin-left: 8px;
   cursor: pointer;
   font: inherit;
@@ -33,5 +33,5 @@
 }
 
 .privacy-settings-button:hover {
-  color: #5c489b;
+  color: var(--color-text-link);
 }

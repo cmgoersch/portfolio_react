@@ -23,7 +23,7 @@ const CookieBanner = () => {
         </button>
         <h2>No worries – your data stays yours.</h2>
         <p>
-          This site uses external content (for example embedded project websites).
+          This site uses external content at Portfolio (for example embedded project websites).
           You decide whether these external services may be loaded.
         </p>
         <div className="cookie-banner-actions">

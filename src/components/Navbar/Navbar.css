@@ -1,7 +1,7 @@
 /* Navigation */
 nav {
-  background-color: #161b22;
-  color: #c9d1d9;
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-primary);
   height: 60px;
   padding: 0 20px;
   position: sticky;
@@ -36,14 +36,14 @@ nav {
 }
 
 #menu-items li a {
-  color: #c9d1d9;
+  color: var(--color-text-primary);
   transition: color 0.3s ease;
   text-decoration: none;
   line-height: 1;
 }
 
 #menu-items li a:hover {
-  color: #5c489b;
+  color: var(--color-text-link);
 }
 
 /* Burger-Menü */
@@ -84,12 +84,12 @@ nav {
 
 #overlay-menu ul li a {
   font-size: 24px;
-  color: #c9d1d9;
+  color: var(--color-text-primary);
   text-decoration: none;
 }
 
 #overlay-menu ul li a:hover {
-  color: #5c489b;
+  color: var(--color-text-link);
 }
 
 #close-menu {

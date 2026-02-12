@@ -2,9 +2,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #3d444e, #0d1117);
-  color: #c9d1d9;
-  font-family: Arial, sans-serif;
+  background: var(--gradient-page);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base);
 }
 
 .work-page main {
@@ -18,7 +18,7 @@
 }
 
 .work-page main a:hover {
-  color: #5c489b;
+  color: var(--color-text-link);
 }
 
 .introduction {
@@ -26,12 +26,12 @@
   max-width: 800px;
   margin: 0 auto 30px auto;
   padding: 0 20px;
-  color: #9ba5b1;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
 .introduction strong {
-  color: #c9d1d9;
+  color: var(--color-text-primary);
 }
 
 /* Vertikales Layout für Iframes und Buttons */
@@ -44,8 +44,8 @@
 }
 
 .content-item {
-  background: #161b22;
-  border: 2px solid #5c489b;
+  background: var(--color-bg-elevated);
+  border: 2px solid var(--color-accent-primary);
   border-radius: 8px;
   width: 90%;
   max-width: 800px;
@@ -80,7 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0d1117;
+  background: var(--color-bg-body);
   color: #8b949e;
   font-size: 18px;
 }
@@ -95,15 +95,15 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  background: #0d1117;
-  color: #9ba5b1;
+  background: var(--color-bg-body);
+  color: var(--color-text-muted);
   text-align: center;
   padding: 0 40px;
 }
 
 .iframe-consent-placeholder button {
   padding: 10px 20px;
-  background-color: #f39c12;
+  background-color: var(--color-accent-warning);
   color: #111;
   border: none;
   border-radius: 4px;
@@ -113,14 +113,14 @@
 }
 
 .iframe-consent-placeholder button:hover {
-  background-color: #f5b041;
+  background-color: var(--color-accent-warning-soft);
 }
 
 .content-item button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #5c489b;
-  color: #c9d1d9;
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-primary);
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -141,12 +141,12 @@
 .content-item h3 {
   margin: 10px 0;
   font-size: 20px;
-  color: #c9d1d9;
+  color: var(--color-text-primary);
 }
 
 .content-item p {
   font-size: 14px;
-  color: #9ba5b1;
+  color: var(--color-text-muted);
   margin: 10px 0 20px;
   line-height: 1.5;
 }
@@ -161,11 +161,11 @@
 
 .techstack span {
   background-color: #30363d;
-  border: 1px solid #5c489b;
+  border: 1px solid var(--color-accent-primary);
   border-radius: 20px;
   padding: 5px 12px;
   font-size: 13px;
-  color: #c9d1d9;
+  color: var(--color-text-primary);
 }
 
 .project-links {
@@ -192,10 +192,10 @@
 }
 
 .vertical-container::-webkit-scrollbar-thumb {
-  background: #5c489b;
+  background: var(--color-accent-primary);
   border-radius: 4px;
 }
 
 .vertical-container::-webkit-scrollbar-track {
-  background: #161b22;
+  background: var(--color-bg-elevated);
 }

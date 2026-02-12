@@ -3,9 +3,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #3d444e, #0d1117);
-  color: #c9d1d9;
-  font-family: Arial, sans-serif;
+  background: var(--gradient-page);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base);
 }
 
 .contact-page main {
@@ -20,8 +20,8 @@
 
 /* Einleitungsbox */
 .contact-intro {
-  background-color: #161b22;
-  border: 1px solid #30363d;
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border-subtle);
   border-radius: 8px;
   padding: 24px;
   text-align: center;
@@ -32,12 +32,12 @@
 }
 
 .contact-intro p {
-  color: #9ba5b1;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
 .contact-intro a {
-  color: #5c489b;
+  color: var(--color-text-link);
   text-decoration: none;
   font-weight: bold;
 }
@@ -65,8 +65,8 @@
 
 /* Formularbereich */
 #contact {
-  background-color: #161b22;
-  border: 1px solid #30363d;
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border-subtle);
   border-radius: 8px;
   padding: 24px;
 }
@@ -95,9 +95,9 @@
   width: 100%;
   padding: 10px 12px;
   border-radius: 4px;
-  border: 1px solid #30363d;
-  background-color: #0d1117;
-  color: #c9d1d9;
+  border: 1px solid var(--color-border-subtle);
+  background-color: var(--color-bg-body);
+  color: var(--color-text-primary);
   font-size: 14px;
   box-sizing: border-box;
 }
@@ -115,15 +115,15 @@
 .contact-box input:focus,
 .contact-box textarea:focus {
   outline: none;
-  border-color: #5c489b;
-  background-color: #161b22;
+  border-color: var(--color-accent-primary);
+  background-color: var(--color-bg-elevated);
 }
 
 .contact-box button {
   align-self: flex-start;
   margin-top: 8px;
   padding: 10px 20px;
-  background-color: #5c489b;
+  background-color: var(--color-accent-primary);
   color: #fff;
   border: none;
   border-radius: 4px;
