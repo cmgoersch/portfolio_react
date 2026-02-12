@@ -60,9 +60,9 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message">Message:</label>
+                <label htmlFor="contact-message">Message:</label>
                 <textarea 
-                  id="message" 
+                  id="contact-message" 
                   name="message" 
                   rows="5" 
                   placeholder="Your message to me :)" 

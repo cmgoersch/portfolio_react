@@ -1,75 +1,61 @@
-/* ----- Grundlayout: Footer fixiert am unteren Rand ----- */
+/* Grundlayout der Contact-Seite */
 .contact-page {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: #c9d1d9;
   background: linear-gradient(to bottom, #3d444e, #0d1117);
-  overflow-x: hidden;
+  color: #c9d1d9;
+  font-family: Arial, sans-serif;
 }
 
 .contact-page main {
   flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 3rem 2rem 2rem 2rem;
-  gap: 2rem;
-  position: relative;
-  z-index: 1;
+  gap: 30px;
 }
 
-/* ----- Einleitungstext in eigener Box ----- */
+/* Einleitungsbox */
 .contact-intro {
-  width: 100%;
-  max-width: 800px;
   background-color: #161b22;
   border: 1px solid #30363d;
-  padding: 2rem;
   border-radius: 8px;
+  padding: 24px;
   text-align: center;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 2;
 }
 
 .contact-intro h2 {
-  color: #c9d1d9;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 0 12px;
 }
 
 .contact-intro p {
   color: #9ba5b1;
-  margin-bottom: 0;
   line-height: 1.6;
 }
 
-.contact-intro p a {
+.contact-intro a {
   color: #5c489b;
   text-decoration: none;
   font-weight: bold;
 }
 
-.contact-intro p a:hover {
+.contact-intro a:hover {
   text-decoration: underline;
 }
 
-/* Social Media Icons */
 .contact-intro .social-icons {
   margin-top: 20px;
-  text-align: center;
 }
 
 .contact-intro .social-icon {
   width: 40px;
   height: 40px;
   margin: 0 10px;
-  transition: transform 0.3s ease;
   filter: brightness(0.8);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .contact-intro .social-icon:hover {
@@ -77,85 +63,65 @@
   filter: brightness(1);
 }
 
-/* ----- Kontaktformular in eigener Box ----- */
+/* Formularbereich */
 #contact {
-  width: 100%;
-  max-width: 800px;
-  position: relative;
-  z-index: 2;
-}
-
-.contact-box {
   background-color: #161b22;
   border: 1px solid #30363d;
-  padding: 2rem;
   border-radius: 8px;
-  box-sizing: border-box;
-  width: 100%;
+  padding: 24px;
 }
 
 .contact-box form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-box form div {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
 }
 
-.contact-box form label {
-  color: #c9d1d9;
+.contact-box label {
   font-weight: bold;
-  margin-bottom: 8px;
-  margin-top: 5px;
-  display: block;
   font-size: 15px;
-  line-height: 1.2;
 }
 
-.contact-box form input,
-.contact-box form textarea {
+.contact-box input,
+.contact-box textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #30363d;
+  padding: 10px 12px;
   border-radius: 4px;
+  border: 1px solid #30363d;
   background-color: #0d1117;
   color: #c9d1d9;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
   font-size: 14px;
-  resize: vertical;
-  position: relative;
-  z-index: auto;
+  box-sizing: border-box;
 }
 
-/* Spezielle Regeln für das Message Textarea */
-.contact-box form textarea {
-  min-height: 120px;
+.contact-box textarea {
+  min-height: 140px;
   resize: vertical;
-  line-height: 1.4;
-  position: relative;
-  z-index: 1;
 }
 
-/* Placeholder Styling */
-.contact-box form input::placeholder,
-.contact-box form textarea::placeholder {
+.contact-box input::placeholder,
+.contact-box textarea::placeholder {
   color: #6c757d;
-  opacity: 1;
 }
 
-.contact-box form input:focus,
-.contact-box form textarea:focus {
+.contact-box input:focus,
+.contact-box textarea:focus {
   outline: none;
-  border: 2px solid #5c489b;
+  border-color: #5c489b;
   background-color: #161b22;
 }
 
-.contact-box form button {
+.contact-box button {
+  align-self: flex-start;
+  margin-top: 8px;
   padding: 10px 20px;
   background-color: #5c489b;
   color: #fff;
@@ -166,6 +132,17 @@
   transition: background-color 0.3s ease;
 }
 
-.contact-box form button:hover {
+.contact-box button:hover {
   background-color: #4a3a7d;
+}
+
+@media (max-width: 600px) {
+  .contact-page main {
+    padding: 30px 16px 16px;
+  }
+
+  .contact-intro,
+  #contact {
+    padding: 20px;
+  }
 }
