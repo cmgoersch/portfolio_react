@@ -35,3 +35,38 @@
 .privacy-settings-button:hover {
   color: var(--color-text-link);
 }
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.theme-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  background-clip: padding-box;
+}
+
+.theme-dot--default {
+  background: linear-gradient(135deg, #5c489b, #3d444e);
+}
+
+.theme-dot--purple {
+  background: linear-gradient(135deg, #7c3aed, #312e81);
+}
+
+.theme-dot--ocean {
+  background: linear-gradient(135deg, #0ea5e9, #1e293b);
+}
+
+.theme-dot--sunset {
+  background: linear-gradient(135deg, #f97316, #3f1f47);
+}
+
+.theme-dot.active {
+  border-color: #ffffff;
+}

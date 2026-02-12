@@ -24,6 +24,50 @@
   --gradient-highlight: linear-gradient(to right, #5a4599, #ffffff);
 }
 
+/* Theme: default (purple / GitHub-dark-like) is defined by base values above */
+
+:root[data-theme='default'] {
+  /* uses base values */
+}
+
+/* Theme: purple (stronger accent, slightly warmer background) */
+:root[data-theme='purple'] {
+  --color-bg-body: #080617;
+  --color-bg-elevated: #130c2c;
+  --color-border-subtle: #2a1f4a;
+  --color-accent-primary: #7c3aed;
+  --color-accent-primary-soft: #a855f7;
+  --color-text-link: #a855f7;
+  --gradient-page: linear-gradient(to bottom, #312e81, #080617);
+  --gradient-highlight: linear-gradient(to right, #7c3aed, #e0f2fe);
+}
+
+/* Theme: ocean (blue / cyan accents) */
+:root[data-theme='ocean'] {
+  --color-bg-body: #020617;
+  --color-bg-elevated: #0b1220;
+  --color-border-subtle: #1f2937;
+  --color-accent-primary: #0ea5e9;
+  --color-accent-primary-soft: #38bdf8;
+  --color-text-link: #38bdf8;
+  --color-text-accent: #38bdf8;
+  --gradient-page: linear-gradient(to bottom, #1e293b, #020617);
+  --gradient-highlight: linear-gradient(to right, #0ea5e9, #e0f2fe);
+}
+
+/* Theme: sunset (orange / pink accents) */
+:root[data-theme='sunset'] {
+  --color-bg-body: #0b0811;
+  --color-bg-elevated: #1a1022;
+  --color-border-subtle: #38203b;
+  --color-accent-primary: #f97316;
+  --color-accent-primary-soft: #fb923c;
+  --color-text-link: #fb923c;
+  --color-text-accent: #fdba74;
+  --gradient-page: linear-gradient(to bottom, #3f1f47, #0b0811);
+  --gradient-highlight: linear-gradient(to right, #f97316, #fecaca);
+}
+
 * {
   margin: 0;
   padding: 0;
