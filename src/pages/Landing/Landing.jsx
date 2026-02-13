@@ -353,7 +353,11 @@ const Landing = () => {
 
   const subtitle = isIceTheme
     ? 'grab an ice cube and make room on the screen'
-    : 'grab a bubble and make room on the screen';
+    : isSmileTheme
+      ? 'grab a smile and make room on the screen'
+      : isBalloonTheme
+        ? 'grab a balloon and make room on the screen'
+        : 'grab a bubble and make room on the screen';
 
   // 👉 Button-Text pro Theme anpassen
   const buttonLabel = isIceTheme
