@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f7ff" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#b9e6ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#6cb7e6" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#d0e9ff" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="84" height="84" rx="10" ry="10" fill="url(#iceGrad)" stroke="#e5f3ff" stroke-width="3"/>
+  <rect x="16" y="16" width="60" height="20" rx="6" ry="6" fill="url(#edgeGrad)"/>
+  <rect x="24" y="60" width="40" height="12" rx="4" ry="4" fill="rgba(255,255,255,0.55)"/>
+</svg>
