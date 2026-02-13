@@ -104,7 +104,7 @@ const Landing = () => {
 
       // Großer Eiswürfel als besonderes Element in der Mitte (leicht verkleinert)
       // 👉 Größe des großen Eiswürfels: specialCubeSize + xScale / yScale anpassen
-      const specialCubeSize = window.innerWidth < 700 ? 50 : 80;
+      const specialCubeSize = window.innerWidth < 700 ? 50 : 150;
       const specialCube = Bodies.rectangle(
         window.innerWidth / 2,
         -120,
@@ -131,7 +131,7 @@ const Landing = () => {
     } else if (isSmileTheme) {
       // Smiley-Bubbles für das orange Theme (selbe Physik wie die normalen Bubbles)
       // 👉 Anzahl der Smileys: Basiswert 910 (auf sehr schmalen Screens automatisch deutlich erhöht)
-      const smileCount = isSmallScreen ? Math.floor(910 * 1.7) : 910;
+      const smileCount = isSmallScreen ? Math.floor(910 * 1.7) : 650;
       for (let i = 0; i < smileCount; i++) {
         const radius = getBubbleRadius();
         const smile = Bodies.circle(
@@ -143,10 +143,10 @@ const Landing = () => {
             friction: 0.7,
             render: {
               sprite: {
-                texture: '/assets/images/smily.svg',
+                texture: '/assets/images/smily_1.png',
                 // 👉 Sichtbare Größe der Smileys: xScale / yScale anpassen
-                xScale: 2 * (radius / 150),
-                yScale: 2 * (radius / 150),
+                xScale: 2.0 * (radius / 350),
+                yScale: 2.0 * (radius / 350),
               },
             },
           }
@@ -166,7 +166,7 @@ const Landing = () => {
       ];
 
       // 👉 Anzahl der Ballons: Basiswert 650 (auf sehr schmalen Screens automatisch deutlich erhöht)
-      const balloonCount = isSmallScreen ? Math.floor(650 * 1.7) : 650;
+      const balloonCount = isSmallScreen ? Math.floor(650 * 1.7) : 500;
       for (let i = 0; i < balloonCount; i++) {
         const radius = getBubbleRadius();
         const texture = balloonTextures[Math.floor(Math.random() * balloonTextures.length)];
